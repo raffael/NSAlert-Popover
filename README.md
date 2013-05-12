@@ -2,6 +2,8 @@
 
 This category adds methods to open the alert within a NSPopover below any kind of NSView. The alerts do not run as modal windows, that is, your app continues execution while the alert's result will be processed in a execution block.
 
+![NSAlert+Popover Preview](http://13j.imghost.us/oW/s2.jpg "NSAlert shown within a NSPopover using the NSAlert+Popover category")
+
 ## Usage
 
 Create a NSAlert and call ```runAsPopoverForView:withCompletionBlock:;```:
