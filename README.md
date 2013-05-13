@@ -20,8 +20,14 @@ Create a NSAlert and call ```runAsPopoverForView:withCompletionBlock:;```:
 
 ## Requirements
 
-Requires at least OS X 10.7 (OS X Lion).
+NSPopovers require at least OS X 10.7 (OS X Lion).
  
+## Contact
+
+* Raffael Hannemann
+* [@raffael-me](http://www.twitter.com/raffae-me/)
+* http://www.raffael.me/
+
 ## License
 
 Copyright (c) 2013 Raffael Hannemann
