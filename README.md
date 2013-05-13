@@ -25,7 +25,7 @@ NSPopovers require at least OS X 10.7 (OS X Lion).
 ## Contact
 
 * Raffael Hannemann
-* [@raffael-me](http://www.twitter.com/raffae-me/)
+* [@raffael-me](http://www.twitter.com/raffael-me/)
 * http://www.raffael.me/
 
 ## License
@@ -35,4 +35,4 @@ Under BSD License.
 
 ## Want more?
 
-Follow [@raffael-me](http://www.twitter.com/raffae-me/) for similar releases.
+Follow [@raffael-me](http://www.twitter.com/raffael-me/) for similar releases.
