@@ -35,4 +35,4 @@ Under BSD License.
 
 ## Want more?
 
-Follow @raffael_me for similar releases.
+Follow [@raffael-me](http://www.twitter.com/raffae-me/) for similar releases.
