@@ -19,10 +19,10 @@ static NSPopover *currentlyOpenedPopover;
 static NSAlert *currentlyOpenedAlert;
 
 - (void) runAsPopoverForView:(NSView *) aView withCompletionBlock:(NSAlertCompletionBlock) aBlock {
-	[self runAsPopoverForView:aView prefferedEdge:NSMaxYEdge withCompletionBlock:aBlock];
+	[self runAsPopoverForView:aView preferredEdge:NSMaxYEdge withCompletionBlock:aBlock];
 }
 
-- (void) runAsPopoverForView:(NSView *) view prefferedEdge:(NSRectEdge)prefferedEdge withCompletionBlock:(NSAlertCompletionBlock)block {
+- (void) runAsPopoverForView:(NSView *) view preferredEdge:(NSRectEdge)preferredEdge withCompletionBlock:(NSAlertCompletionBlock)block {
 	
 	// Set this alert as the target of all its buttons
 	for (NSButton *button in [self buttons]) {
@@ -95,7 +95,7 @@ static NSAlert *currentlyOpenedAlert;
 
 - (void) checkForPreviouslyShownAlerts {
 	// If previously opened alerts are referenced, open the last one.
-	if (previouslyOpenedAlerts.count>0) {
+	if (previouslyOpenedAlerts && previouslyOpenedAlerts.count>0) {
 		NSAlert *alert = [previouslyOpenedAlerts lastObject];
 		[previouslyOpenedAlerts removeObject:alert];
 		[alert runAsPopoverForView:alert.targetView withCompletionBlock:alert.completionBlock];

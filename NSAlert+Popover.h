@@ -7,13 +7,13 @@
 
 #import <Cocoa/Cocoa.h>
 
-typedef void (^NSAlertCompletionBlock)(NSInteger *result);
+typedef void (^NSAlertCompletionBlock)(NSInteger result);
 
 /** This category adds methods to run an NSAlert within a NSPopover below any kind of NSView.
  */
 @interface NSAlert (Popover)
 
-/** This block will be executed with the index of the button, the user has clicked, as the paramter.
+/** This block will be executed with the index of the button, the user has clicked, as the parameter.
  */
 @property (copy) NSAlertCompletionBlock completionBlock;
 
@@ -21,15 +21,15 @@ typedef void (^NSAlertCompletionBlock)(NSInteger *result);
  */
 @property (retain) NSPopover *parentPopover;
 
-/** The target view below which this alert will be pop over. The reference is required for enqueuing mumtuple Popover alerts.
+/** The target view below which this alert will be popped over. The reference is required for enqueuing mumtuple Popover alerts.
  */
 @property (retain) NSView *targetView;
 
 /** The main method of this category to open an NSAlert within a NSPopover below any kind of NSView.
  */
-- (void) runAsPopoverForView:(NSView *)aView prefferedEdge:(NSRectEdge)prefferedEdge withCompletionBlock:(NSAlertCompletionBlock)aBlock;
+- (void) runAsPopoverForView:(NSView *)aView preferredEdge:(NSRectEdge)preferredEdge withCompletionBlock:(NSAlertCompletionBlock)aBlock;
 
-/** Convenient method that uses NSYMaxEdge as preffered edge.
+/** Convenient method that uses NSYMaxEdge as preferred edge.
  */
 - (void) runAsPopoverForView:(NSView *)aView withCompletionBlock:(NSAlertCompletionBlock)aBlock;
 
