@@ -2,7 +2,7 @@
 
 This category adds methods to open the alert within a NSPopover below any kind of NSView. The alerts do not run as modal windows, that is, your app continues execution while the alert's result will be processed in a execution block.
 
-![NSAlert+Popover Preview](http://13j.imghost.us/oW/s2.jpg "NSAlert shown within a NSPopover using the NSAlert+Popover category")
+![NSAlert+Popover Preview](https://s3.amazonaws.com/cocoacontrols_production/uploads/control_image/image/715/original.jpg "NSAlert shown within a NSPopover using the NSAlert+Popover category")
 
 ## Usage
 
@@ -21,6 +21,7 @@ Create a NSAlert and call ```runAsPopoverForView:withCompletionBlock:;```:
 ## Requirements
 
 NSPopovers require at least OS X 10.7 (OS X Lion).
+This category has been built for and tested **with ARC enabled** only!
  
 ## Contact
 
