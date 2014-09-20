@@ -19,11 +19,11 @@ typedef void (^NSAlertCompletionBlock)(NSInteger result);
 
 /** The reference to the parent Popover, that contains this alert, is required to close the Popover from within the button click handling.
  */
-@property (retain) NSPopover *parentPopover;
+@property (strong) NSPopover *parentPopover;
 
 /** The target view below which this alert will be popped over. The reference is required for enqueuing mumtuple Popover alerts.
  */
-@property (retain) NSView *targetView;
+@property (weak) IBOutlet NSView *targetView;
 
 /** The main method of this category to open an NSAlert within a NSPopover below any kind of NSView.
  */
